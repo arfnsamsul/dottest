@@ -7,6 +7,8 @@ target 'Dot Test' do
 
   # Pods for Dot Test
   pod 'Alamofire', '5.1'
+  pod 'SDWebImage'
+  pod 'MBProgressHUD', '~> 1.2.0'
 
   target 'Dot TestTests' do
     inherit! :search_paths

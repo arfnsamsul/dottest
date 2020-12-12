@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,17 @@
 		992D186C2B8EC1486BD51454 /* Pods_Dot_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25154E417E03CB93C6E80AF1 /* Pods_Dot_Test.framework */; };
 		FAAA96222584EABD009A1F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96212584EABD009A1F1F /* AppDelegate.swift */; };
 		FAAA96242584EABD009A1F1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96232584EABD009A1F1F /* SceneDelegate.swift */; };
-		FAAA96262584EABD009A1F1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96252584EABD009A1F1F /* ViewController.swift */; };
 		FAAA96292584EABD009A1F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAA96272584EABD009A1F1F /* Main.storyboard */; };
 		FAAA962B2584EABF009A1F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAA962A2584EABF009A1F1F /* Assets.xcassets */; };
 		FAAA962E2584EABF009A1F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAA962C2584EABF009A1F1F /* LaunchScreen.storyboard */; };
 		FAAA96392584EABF009A1F1F /* Dot_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96382584EABF009A1F1F /* Dot_TestTests.swift */; };
 		FAAA96442584EABF009A1F1F /* Dot_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96432584EABF009A1F1F /* Dot_TestUITests.swift */; };
+		FAAA96552584EE67009A1F1F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96542584EE67009A1F1F /* APIClient.swift */; };
+		FAAA96572584F280009A1F1F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96562584F280009A1F1F /* MainTabBarController.swift */; };
+		FAAA965A2584F416009A1F1F /* GetPlaceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96592584F416009A1F1F /* GetPlaceResponse.swift */; };
+		FAAA965D2584F665009A1F1F /* MainLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA965C2584F665009A1F1F /* MainLoader.swift */; };
+		FAAA965F2584F6A2009A1F1F /* DotConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA965E2584F6A2009A1F1F /* DotConstant.swift */; };
+		FAAA96612584F751009A1F1F /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96602584F751009A1F1F /* PlaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +55,6 @@
 		FAAA961E2584EABD009A1F1F /* Dot Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dot Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAA96212584EABD009A1F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAA96232584EABD009A1F1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAAA96252584EABD009A1F1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAAA96282584EABD009A1F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAAA962A2584EABF009A1F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAA962D2584EABF009A1F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +65,12 @@
 		FAAA963F2584EABF009A1F1F /* Dot TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dot TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAA96432584EABF009A1F1F /* Dot_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dot_TestUITests.swift; sourceTree = "<group>"; };
 		FAAA96452584EABF009A1F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAA96542584EE67009A1F1F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FAAA96562584F280009A1F1F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FAAA96592584F416009A1F1F /* GetPlaceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlaceResponse.swift; sourceTree = "<group>"; };
+		FAAA965C2584F665009A1F1F /* MainLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoader.swift; sourceTree = "<group>"; };
+		FAAA965E2584F6A2009A1F1F /* DotConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotConstant.swift; sourceTree = "<group>"; };
+		FAAA96602584F751009A1F1F /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +121,6 @@
 				E7C226BFB3AF28C1DBEA8634 /* Pods-Dot TestTests.debug.xcconfig */,
 				5741248E0782DAF11F1B304D /* Pods-Dot TestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,10 +149,11 @@
 		FAAA96202584EABD009A1F1F /* Dot Test */ = {
 			isa = PBXGroup;
 			children = (
-				FAAA96212584EABD009A1F1F /* AppDelegate.swift */,
-				FAAA96232584EABD009A1F1F /* SceneDelegate.swift */,
-				FAAA96252584EABD009A1F1F /* ViewController.swift */,
-				FAAA96272584EABD009A1F1F /* Main.storyboard */,
+				FAAA96512584EC62009A1F1F /* AppDelegate */,
+				FAAA96522584EE2D009A1F1F /* View */,
+				FAAA96582584F3F0009A1F1F /* Model */,
+				FAAA965B2584F603009A1F1F /* Loader */,
+				FAAA96532584EE49009A1F1F /* Support */,
 				FAAA962A2584EABF009A1F1F /* Assets.xcassets */,
 				FAAA962C2584EABF009A1F1F /* LaunchScreen.storyboard */,
 				FAAA962F2584EABF009A1F1F /* Info.plist */,
@@ -167,6 +177,50 @@
 				FAAA96452584EABF009A1F1F /* Info.plist */,
 			);
 			path = "Dot TestUITests";
+			sourceTree = "<group>";
+		};
+		FAAA96512584EC62009A1F1F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA96212584EABD009A1F1F /* AppDelegate.swift */,
+				FAAA96232584EABD009A1F1F /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FAAA96522584EE2D009A1F1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA96272584EABD009A1F1F /* Main.storyboard */,
+				FAAA96562584F280009A1F1F /* MainTabBarController.swift */,
+				FAAA96602584F751009A1F1F /* PlaceViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAAA96532584EE49009A1F1F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA96542584EE67009A1F1F /* APIClient.swift */,
+				FAAA965E2584F6A2009A1F1F /* DotConstant.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		FAAA96582584F3F0009A1F1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA96592584F416009A1F1F /* GetPlaceResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAAA965B2584F603009A1F1F /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA965C2584F665009A1F1F /* MainLoader.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,9 +462,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAAA96262584EABD009A1F1F /* ViewController.swift in Sources */,
+				FAAA96612584F751009A1F1F /* PlaceViewController.swift in Sources */,
 				FAAA96222584EABD009A1F1F /* AppDelegate.swift in Sources */,
+				FAAA965D2584F665009A1F1F /* MainLoader.swift in Sources */,
 				FAAA96242584EABD009A1F1F /* SceneDelegate.swift in Sources */,
+				FAAA965A2584F416009A1F1F /* GetPlaceResponse.swift in Sources */,
+				FAAA96572584F280009A1F1F /* MainTabBarController.swift in Sources */,
+				FAAA965F2584F6A2009A1F1F /* DotConstant.swift in Sources */,
+				FAAA96552584EE67009A1F1F /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
