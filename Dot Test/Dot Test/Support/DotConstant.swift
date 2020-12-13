@@ -10,5 +10,5 @@ import Foundation
 class DotConstant{
     static let baseUrl = "https://dot-mobile-test.web.app/"
     static let placeUrl = DotConstant.baseUrl + "place.json"
-    
+    static let galleryUrl = DotConstant.baseUrl + "gallery.json"
 }

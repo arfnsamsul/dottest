@@ -9,6 +9,8 @@ target 'Dot Test' do
   pod 'Alamofire', '5.1'
   pod 'SDWebImage'
   pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'ImageViewer.swift', '~> 3.0'
+  pod 'ImageViewer.swift/Fetcher', '~> 3.0'
 
   target 'Dot TestTests' do
     inherit! :search_paths

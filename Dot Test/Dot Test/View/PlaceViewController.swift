@@ -21,7 +21,9 @@ class PlaceViewController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         getPlace()
     }
     
