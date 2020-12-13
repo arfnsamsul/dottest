@@ -16,4 +16,7 @@ class MainLoader {
     public static func getGallery(completion:@escaping (Result<GetGalleryResponse, AFError>)->Void){
         APIClient.performRequest(url: DotConstant.galleryUrl, method: .get, headers: [:], parameters: [:], completion:completion)
     }
+    public static func getProfile(completion:@escaping (Result<GetProfileResponse, AFError>)->Void){
+        APIClient.performRequest(url: DotConstant.profileUrl, method: .get, headers: [:], parameters: [:], completion:completion)
+    }
 }

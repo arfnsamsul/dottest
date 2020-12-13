@@ -11,4 +11,5 @@ class DotConstant{
     static let baseUrl = "https://dot-mobile-test.web.app/"
     static let placeUrl = DotConstant.baseUrl + "place.json"
     static let galleryUrl = DotConstant.baseUrl + "gallery.json"
+    static let profileUrl = DotConstant.baseUrl + "user.json"
 }

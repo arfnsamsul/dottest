@@ -75,14 +75,71 @@
         <!--Profile-->
         <scene sceneID="MIg-rI-O3C">
             <objects>
-                <viewController id="xFX-8M-JNG" sceneMemberID="viewController">
+                <viewController id="xFX-8M-JNG" customClass="ProfileViewController" customModule="Dot_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xZv-lp-cf8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHa-12-RPK">
+                                <rect key="frame" x="132" y="353.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="2pw-Zn-hN5"/>
+                                    <constraint firstAttribute="height" constant="150" id="Bon-xn-P4B"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOl-AY-gc7">
+                                <rect key="frame" x="203" y="511.5" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6C-VS-emN">
+                                <rect key="frame" x="202" y="540.5" width="10" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxL-S5-Icd">
+                                <rect key="frame" x="203" y="603" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVi-0t-NMi">
+                                <rect key="frame" x="203" y="574" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c6C-VS-emN" firstAttribute="centerX" secondItem="AOl-AY-gc7" secondAttribute="centerX" id="9XE-KP-j6J"/>
+                            <constraint firstItem="AOl-AY-gc7" firstAttribute="top" secondItem="yHa-12-RPK" secondAttribute="bottom" constant="8" id="DjM-zs-IQ2"/>
+                            <constraint firstItem="ZVi-0t-NMi" firstAttribute="centerX" secondItem="yHa-12-RPK" secondAttribute="centerX" id="Orl-ra-5Fw"/>
+                            <constraint firstItem="ZVi-0t-NMi" firstAttribute="top" secondItem="c6C-VS-emN" secondAttribute="bottom" constant="8" id="Ttt-dr-XyS"/>
+                            <constraint firstItem="yHa-12-RPK" firstAttribute="centerX" secondItem="FiN-Az-f86" secondAttribute="centerX" id="eGv-zF-HZH"/>
+                            <constraint firstItem="yHa-12-RPK" firstAttribute="centerY" secondItem="FiN-Az-f86" secondAttribute="centerY" id="lxZ-B8-MJq"/>
+                            <constraint firstItem="XxL-S5-Icd" firstAttribute="centerX" secondItem="yHa-12-RPK" secondAttribute="centerX" id="r3Q-03-Tmm"/>
+                            <constraint firstItem="c6C-VS-emN" firstAttribute="top" secondItem="AOl-AY-gc7" secondAttribute="bottom" constant="8" id="xcM-z1-HTQ"/>
+                            <constraint firstItem="XxL-S5-Icd" firstAttribute="top" secondItem="ZVi-0t-NMi" secondAttribute="bottom" constant="8" id="yTE-Zg-8Pj"/>
+                            <constraint firstItem="AOl-AY-gc7" firstAttribute="centerX" secondItem="yHa-12-RPK" secondAttribute="centerX" id="zGt-AB-62I"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FiN-Az-f86"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" selectedImage="person.fill" id="llS-2g-0tt"/>
+                    <connections>
+                        <outlet property="imgAvatar" destination="yHa-12-RPK" id="6AI-eC-gIh"/>
+                        <outlet property="lblEmail" destination="ZVi-0t-NMi" id="ZL7-b7-hRb"/>
+                        <outlet property="lblFullName" destination="c6C-VS-emN" id="lqq-HE-Bdt"/>
+                        <outlet property="lblPhone" destination="XxL-S5-Icd" id="YRX-9A-uyv"/>
+                        <outlet property="lblUserName" destination="AOl-AY-gc7" id="o6H-wu-IK6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ky-WF-Fuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

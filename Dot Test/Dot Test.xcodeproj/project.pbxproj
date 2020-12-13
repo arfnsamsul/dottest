@@ -12,6 +12,8 @@
 		992D186C2B8EC1486BD51454 /* Pods_Dot_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25154E417E03CB93C6E80AF1 /* Pods_Dot_Test.framework */; };
 		FAA9AC2E2586424E003D9E65 /* GetGalleryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AC2D2586424E003D9E65 /* GetGalleryResponse.swift */; };
 		FAA9AC3025864398003D9E65 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AC2F25864398003D9E65 /* GalleryViewController.swift */; };
+		FAA9AC322586513A003D9E65 /* GetProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AC312586513A003D9E65 /* GetProfileResponse.swift */; };
+		FAA9AC3425865171003D9E65 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AC3325865171003D9E65 /* ProfileViewController.swift */; };
 		FAAA96222584EABD009A1F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96212584EABD009A1F1F /* AppDelegate.swift */; };
 		FAAA96242584EABD009A1F1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA96232584EABD009A1F1F /* SceneDelegate.swift */; };
 		FAAA96292584EABD009A1F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAA96272584EABD009A1F1F /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 		E7C226BFB3AF28C1DBEA8634 /* Pods-Dot TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dot TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Dot TestTests/Pods-Dot TestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAA9AC2D2586424E003D9E65 /* GetGalleryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGalleryResponse.swift; sourceTree = "<group>"; };
 		FAA9AC2F25864398003D9E65 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		FAA9AC312586513A003D9E65 /* GetProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfileResponse.swift; sourceTree = "<group>"; };
+		FAA9AC3325865171003D9E65 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FAAA961E2584EABD009A1F1F /* Dot Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dot Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAA96212584EABD009A1F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAA96232584EABD009A1F1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				FAAA96562584F280009A1F1F /* MainTabBarController.swift */,
 				FAAA96602584F751009A1F1F /* PlaceViewController.swift */,
 				FAA9AC2F25864398003D9E65 /* GalleryViewController.swift */,
+				FAA9AC3325865171003D9E65 /* ProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			children = (
 				FAAA96592584F416009A1F1F /* GetPlaceResponse.swift */,
 				FAA9AC2D2586424E003D9E65 /* GetGalleryResponse.swift */,
+				FAA9AC312586513A003D9E65 /* GetProfileResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -474,10 +480,12 @@
 				FAAA96242584EABD009A1F1F /* SceneDelegate.swift in Sources */,
 				FAA9AC2E2586424E003D9E65 /* GetGalleryResponse.swift in Sources */,
 				FAAA965A2584F416009A1F1F /* GetPlaceResponse.swift in Sources */,
+				FAA9AC3425865171003D9E65 /* ProfileViewController.swift in Sources */,
 				FAAA96572584F280009A1F1F /* MainTabBarController.swift in Sources */,
 				FAA9AC3025864398003D9E65 /* GalleryViewController.swift in Sources */,
 				FAAA965F2584F6A2009A1F1F /* DotConstant.swift in Sources */,
 				FAAA96552584EE67009A1F1F /* APIClient.swift in Sources */,
+				FAA9AC322586513A003D9E65 /* GetProfileResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
