@@ -113,34 +113,33 @@ class PlaceMultipleCell: UITableViewCell {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblContent: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var pageControl: UIPageControl!
     
     var imagesUrl:[String] = []
-    
     func setupScroll() {
-        pageControl.numberOfPages = imagesUrl.count
         var frame = CGRect.zero
-        for index in 0..<imagesUrl.count {
-            // 1.
-            frame.origin.x = scrollView.frame.size.width * CGFloat(index)
-            frame.size = scrollView.frame.size
-            
-            // 2.
-            let imgView = UIImageView(frame: frame)
-            imgView.sd_setImage(with: URL(string: imagesUrl[index]))
-
-            self.scrollView.addSubview(imgView)
+        let width:CGFloat = scrollView.frame.size.width * 0.8
+        let space:CGFloat = 8.0
+        
+        for view in self.scrollView.subviews {
+            view.removeFromSuperview()
         }
         
-        let scrollWidth = scrollView.frame.size.width
-        scrollView.contentSize = CGSize(width: (scrollWidth * CGFloat(imagesUrl.count)), height: scrollView.frame.size.height)
-        scrollView.delegate = self
-    }
-}
+        for index in 0..<imagesUrl.count {
+            frame.origin.x = (width + space) * CGFloat(index)
+            frame.size = CGSize(width: width, height: scrollView.frame.height)
 
-extension PlaceMultipleCell: UIScrollViewDelegate {
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
-        pageControl.currentPage = Int(pageNumber)
+            let containerView = UIView(frame: frame)
+            self.scrollView.addSubview(containerView)
+            
+            let imgView = UIImageView()
+            imgView.sd_setImage(with: URL(string: imagesUrl[index]))
+            imgView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+            imgView.contentMode = .scaleAspectFill
+            imgView.layer.cornerRadius = 8
+            imgView.clipsToBounds = true
+            containerView.addSubview(imgView)
+        }
+        
+        scrollView.contentSize = CGSize(width: (width + space) * CGFloat(imagesUrl.count), height: scrollView.frame.size.height)
     }
 }

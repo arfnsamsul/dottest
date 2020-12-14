@@ -253,7 +253,7 @@
                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDq-aZ-oL3">
+                                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDq-aZ-oL3">
                                                             <rect key="frame" x="16" y="69" width="366" height="195"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="rDq-aZ-oL3" secondAttribute="height" multiplier="15:8" id="wn8-6F-chz"/>
@@ -261,13 +261,9 @@
                                                             <viewLayoutGuide key="contentLayoutGuide" id="CjK-sw-NFn"/>
                                                             <viewLayoutGuide key="frameLayoutGuide" id="EOE-dS-rix"/>
                                                         </scrollView>
-                                                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Q0q-0G-Nik">
-                                                            <rect key="frame" x="179.5" y="219" width="39" height="37"/>
-                                                        </pageControl>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="Q0q-0G-Nik" firstAttribute="centerX" secondItem="rDq-aZ-oL3" secondAttribute="centerX" id="81D-ri-MPp"/>
                                                         <constraint firstAttribute="trailing" secondItem="6U8-pE-Iw8" secondAttribute="trailing" constant="16" id="Iii-N4-aaV"/>
                                                         <constraint firstItem="rDq-aZ-oL3" firstAttribute="top" secondItem="6U8-pE-Iw8" secondAttribute="bottom" constant="4" id="OPK-rC-blx"/>
                                                         <constraint firstItem="p7D-h5-KSe" firstAttribute="top" secondItem="IoN-HO-G5r" secondAttribute="top" constant="16" id="QJC-j8-WTs"/>
@@ -276,7 +272,6 @@
                                                         <constraint firstItem="rDq-aZ-oL3" firstAttribute="leading" secondItem="IoN-HO-G5r" secondAttribute="leading" constant="16" id="UoG-KX-eM9"/>
                                                         <constraint firstAttribute="trailing" secondItem="p7D-h5-KSe" secondAttribute="trailing" constant="16" id="WrO-ZX-oCq"/>
                                                         <constraint firstItem="p7D-h5-KSe" firstAttribute="leading" secondItem="IoN-HO-G5r" secondAttribute="leading" constant="16" id="YeY-29-PSi"/>
-                                                        <constraint firstItem="Q0q-0G-Nik" firstAttribute="bottom" secondItem="rDq-aZ-oL3" secondAttribute="bottom" constant="-8" id="ZlK-C5-DsC"/>
                                                         <constraint firstItem="6U8-pE-Iw8" firstAttribute="top" secondItem="p7D-h5-KSe" secondAttribute="bottom" id="kEY-eN-dQk"/>
                                                         <constraint firstAttribute="trailing" secondItem="rDq-aZ-oL3" secondAttribute="trailing" constant="16" id="uv9-Iq-yl5"/>
                                                     </constraints>
@@ -298,7 +293,6 @@
                                         <connections>
                                             <outlet property="lblContent" destination="6U8-pE-Iw8" id="t6Q-Cd-jUw"/>
                                             <outlet property="lblTitle" destination="p7D-h5-KSe" id="kxA-nD-dFn"/>
-                                            <outlet property="pageControl" destination="Q0q-0G-Nik" id="r2E-Mg-HcT"/>
                                             <outlet property="scrollView" destination="rDq-aZ-oL3" id="Ul3-lu-nkd"/>
                                         </connections>
                                     </tableViewCell>
